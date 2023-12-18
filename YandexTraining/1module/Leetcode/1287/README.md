@@ -17,4 +17,30 @@ Constraints:
 * 1 <= arr.length <= 10^4
 * 0 <= arr[i] <= 10^5
 
-## Solutions
+## Solution
+```
+public class Solution {
+    public int FindSpecialInteger(int[] arr) 
+    {
+        Dictionary<int, int> dict = new Dictionary<int, int>();
+        foreach(int a in arr)
+        {
+            dict[a] = 0;
+        }
+        int i = 0;
+        int result = 0;
+        foreach(int num in arr)
+        {
+            dict[arr[i]] += 1;
+
+            //check if it's 25%
+            if (dict[arr[i]] > 0.25 * (arr.Count()-1))
+            {
+                result = arr[i];
+            }
+            i++;
+        }
+        return result;
+    }
+}
+```
