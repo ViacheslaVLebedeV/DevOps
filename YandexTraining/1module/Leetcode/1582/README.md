@@ -4,8 +4,9 @@ A position (i, j) is called special if mat[i][j] == 1 and all other elements in
 row i and column j are 0 (rows and columns are 0-indexed).
 
 * Example 1:
+![image](https://github.com/ViacheslaVLebedeV/DevOps/assets/102717803/ddbee120-7d12-40ba-9341-f3ea1dcadc3a)
 
-![image](https://github.com/ViacheslaVLebedeV/DevOps/assets/102717803/5d8b75bd-5edf-4b9c-90d4-a25c3acc4953)
+
 > Input: mat = [[1,0,0],[0,0,1],[1,0,0]]
 >
 > Output: 1
