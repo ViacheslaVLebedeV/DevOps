@@ -1,0 +1,16 @@
+# roles/common/tasks/main.yml
+
+- name: Install required packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - package1
+    - package2
+
+
+- name: Configure network settings
+  template:
+    src: network_config.j2
+    dest: /etc/network/interfaces
+  notify: Restart network

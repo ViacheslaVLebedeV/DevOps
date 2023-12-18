@@ -1,0 +1,6 @@
+# inventory.yml
+remote_servers:
+  hosts:
+    192.168.1.100:
+  vars:
+    ansible_ssh_user: remote_user

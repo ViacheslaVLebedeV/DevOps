@@ -1,0 +1,6 @@
+# main_playbook.yml
+---
+ - hosts: remote_servers
+ - become: true
+ - roles:
+     - common
